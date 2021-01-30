@@ -1,0 +1,41 @@
+{
+  "introduction": {
+    "title": "Hola, soc Fran Torregrosa 👋",
+    "subtitle": "Desenvolupador <em>front-end</em> · Progressive Web Apps · Maquetació adaptativa",
+    "description": "Sóc <strong>tècnic en desenvolupament</strong> d'aplicacions multiplataforma i visc a València. M'apassiona aportar en projectes que tenen un impacte en la vida de la gent. Sóc <strong>autodidacta</strong> des de molt xicotet i això m'ha permés ser <strong>resolutiu</strong> a l'hora d'afrontar reptes. D'altra banda, m'interessen temes diversos com la tecnologia, la ciència, l'urbanisme i la mobilitat."
+  },
+  "contact": {
+    "findMe": "Pots trobar-me en:"
+  },
+  "skills": {
+    "title": "Habilitats",
+    "frontEnd": "<em>Front-end</em>",
+    "css": "CSS 3 i SASS",
+    "backEnd": "<em>Back-end</em>",
+    "devOps": "<em>DevOps</em>",
+    "other": "Altres",
+    "responsive": "Maquetació adaptativa",
+    "componentsArchitecture": "Arquitectura de components",
+    "security": "Seguretat",
+    "apiArchitectures": "GraphQL i REST",
+    "regex": "Expressions regulars"
+  },
+  "positions": {
+    "experience": "Experiència",
+    "projects": "Projectes",
+    "present": "Actualitat",
+    "fullStack": "Desenvolupador <em>full-stack</em>",
+    "frontEnd": "Desenvolupador <em>front-end</em>",
+    "contentCreator": "Creador de contingut",
+    "secretaryAndCoFounder": "Secretari i cofundador"
+  },
+  "languages": {
+    "title": "Idiomes",
+    "spanish": "Castellà",
+    "valencian": "Valencià/català",
+    "english": "Inglés",
+    "nativeLevel": "Nadiu",
+    "intermediateLevel": "Intermedi",
+    "B2Certificate": "Títol B2"
+  }
+}

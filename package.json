@@ -1,0 +1,45 @@
+{
+  "name": "@frantorreg/showcase",
+  "license": "MIT",
+  "private": true,
+  "contributors": [
+    {
+      "name": "Fran Torregrosa Alegre",
+      "email": "contact@frantorregrosa.me"
+    }
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-regular-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "i18next": "^19.8.4",
+    "i18next-browser-languagedetector": "^3.1.1",
+    "moment": "^2.29.1",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^10.13.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1"
+  },
+  "devDependencies": {
+    "serv": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "serve": "serv --path build -p 3000 -b 0.0.0.0",
+    "test": "react-scripts test"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

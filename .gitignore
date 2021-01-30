@@ -1,0 +1,15 @@
+# Operating system files
+.DS_Store
+
+# IDEs
+/.idea
+
+# Project
+/build
+/node_modules
+/.env
+.eslintcache
+
+# Logs
+npm-debug.log*
+*.log

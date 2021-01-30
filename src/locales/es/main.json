@@ -1,0 +1,41 @@
+{
+  "introduction": {
+    "title": "Hola, soy Fran Torregrosa 👋",
+    "subtitle": "Desarrollador <em>front-end</em> · Progressive Web Apps · Maquetación adaptativa",
+    "description": "Soy <strong>técnico en desarrollo</strong> de aplicaciones multiplataforma y vivo en Valencia. Me apasiona aportar en proyectos que tienen un impacto en la vida de la gente. Soy <strong>autodidacta</strong> desde muy pequeño y eso me ha permitido ser <strong>resolutivo</strong> a la hora de afrontar retos. Por otra parte, me interesan temas diversos como la tecnología, la ciencia, el urbanismo y la movilidad."
+  },
+  "contact": {
+    "findMe": "Puedes encontrarme en:"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontEnd": "<em>Front-end</em>",
+    "css": "CSS 3 y SASS",
+    "backEnd": "<em>Back-end</em>",
+    "devOps": "<em>DevOps</em>",
+    "other": "Otros",
+    "responsive": "Maquetación adaptativa",
+    "componentsArchitecture": "Arquitectura de componentes",
+    "security": "Seguridad",
+    "apiArchitectures": "GraphQL y REST",
+    "regex": "Expresiones regulares"
+  },
+  "positions": {
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "present": "Actualidad",
+    "fullStack": "Desarrollador <em>full-stack</em>",
+    "frontEnd": "Desarrollador <em>front-end</em>",
+    "contentCreator": "Creador de contenido",
+    "secretaryAndCoFounder": "Secretario y cofundador"
+  },
+  "languages": {
+    "title": "Idiomas",
+    "spanish": "Castellano",
+    "valencian": "Valenciano/catalán",
+    "english": "Inglés",
+    "nativeLevel": "Nativo",
+    "intermediateLevel": "Intermedio",
+    "B2Certificate": "Título B2"
+  }
+}
