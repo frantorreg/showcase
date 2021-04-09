@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Translation, withTranslation} from 'react-i18next';
+import { ReactComponent as CecotecLogo } from 'images/organizations/cecotec.svg';
 import { ReactComponent as DideLogo } from 'images/organizations/dide.svg';
 import { ReactComponent as AvptpLogo } from 'images/organizations/avptp.svg';
 import { ReactComponent as HabtiumLogo } from 'images/organizations/habtium.svg';
@@ -214,6 +215,31 @@ class Main extends Component {
             </section>
             <section className='experience'>
               <h2>{t('positions.experience')}</h2>
+              <div className='cecotec'>
+                <div className='logo'>
+                  <CecotecLogo/>
+                </div>
+                <div>
+                  <a className='name' target='_blank' href='https://cecotec.com'>Cecotec</a>
+                  {
+                    (() => {
+                      const startDate = moment({ y: 2021, M: 2, d: 22 });
+                      const endDate = moment();
+                      return (
+                        <div className='period'>
+                          {startDate.format('MMMM YYYY')} — {t('positions.present')}
+                          <span className='duration'>
+                            {moment.duration(endDate.diff(startDate)).humanize()}
+                          </span>
+                        </div>
+                      );
+                    })()
+                  }
+                  <div className='description'>
+                    <span dangerouslySetInnerHTML={{__html: t('positions.frontEnd')}}/>
+                  </div>
+                </div>
+              </div>
               <div className='dide'>
                 <div className='logo'>
                   <DideLogo/>
@@ -223,10 +249,10 @@ class Main extends Component {
                   {
                     (() => {
                       const startDate = moment({ y: 2017, M: 5, d: 1 });
-                      const endDate = moment();
+                      const endDate = moment({ y: 2021, M: 2, d: 21 });
                       return (
                         <div className='period'>
-                          {startDate.format('MMMM YYYY')} — {t('positions.present')}
+                          {startDate.format('MMMM YYYY')} — {endDate.format('MMMM YYYY')}
                           <span className='duration'>
                             {moment.duration(endDate.diff(startDate)).humanize()}
                           </span>
