@@ -16,6 +16,7 @@ import './Main.scss';
 
 // components
 import Episode from "../Episode/Episode";
+import Skill from "../Skill/Skill";
 
 class Main extends Component {
 
@@ -72,152 +73,43 @@ class Main extends Component {
                   <div className='title'>
                     <span dangerouslySetInnerHTML={{__html: t('skills.frontEnd')}}/>
                   </div>
-                  <div className='skill'>
-                    <span>
-                      HTML 5
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar high'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      {t('skills.css')}
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar high'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      JavaScript (ES6)
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar high'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      React
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar mid-high'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      Webpack
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar mid'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      Progresive Web App
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar mid'/>
-                    </div>
-                  </div>
+                  <Skill level='high' name='HTML 5'/>
+                  <Skill level='high' name={t('skills.css')}/>
+                  <Skill level='high' name='JavaScript (ES6)'/>
+                  <Skill level='high' name='React'/>
+                  <Skill level='mid' name='Redux'/>
+                  <Skill level='mid' name='Relay'/>
+                  <Skill level='mid' name='Webpack'/>
+                  <Skill level='mid' name='Progresive Web App'/>
                 </div>
                 <div className='category'>
                   <div className='title'>
                     <span dangerouslySetInnerHTML={{__html: t('skills.backEnd')}}/>
                   </div>
-                  <div className='skill'>
-                    <span>
-                      Ruby
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar mid-high'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      Rails
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar high'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      NodeJS
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar mid'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      MongoDB
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar high'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      SQL
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar high'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      Go
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar low'/>
-                    </div>
-                  </div>
+                  <Skill level='mid-high' name='Ruby'/>
+                  <Skill level='high' name='Rails'/>
+                  <Skill level='mid' name='NodeJS'/>
+                  <Skill level='high' name='MongoDB'/>
+                  <Skill level='high' name='SQL'/>
+                  <Skill level='low' name='Go'/>
                 </div>
                 <div className='category'>
                   <div className='title'>
                     <span dangerouslySetInnerHTML={{__html: t('skills.devOps')}}/>
                   </div>
-                  <div className='skill'>
-                    <span>
-                      Git
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar high'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      Docker
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar mid'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      Kubernetes
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar low'/>
-                    </div>
-                  </div>
-                  <div className='skill'>
-                    <span>
-                      GNU/Linux
-                    </span>
-                    <div className='knowledge'>
-                      <div className='bar mid-high'/>
-                    </div>
-                  </div>
+                  <Skill level='high' name='Git'/>
+                  <Skill level='mid' name='Docker'/>
+                  <Skill level='low' name='Kubernetes'/>
+                  <Skill level='mid-high' name='GNU/Linux'/>
                 </div>
                 <div className='category'>
                   <div className='title'>{t('skills.other')}</div>
-                  <div className='skill'>{t('skills.responsive')}</div>
-                  <div className='skill'>{t('skills.componentsArchitecture')}</div>
-                  <div className='skill'>{t('skills.security')}</div>
-                  <div className='skill'>{t('skills.apiArchitectures')}</div>
-                  <div className='skill'>{t('skills.regex')}</div>
+                  <Skill name={t('skills.responsive')}/>
+                  <Skill name={t('skills.componentsArchitecture')}/>
+                  <Skill name={t('skills.security')}/>
+                  <Skill name={t('skills.apiArchitectures')}/>
+                  <Skill name={t('skills.websocketAndSSE')}/>
+                  <Skill name={t('skills.regex')}/>
                 </div>
               </div>
             </section>

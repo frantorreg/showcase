@@ -18,6 +18,7 @@
     "componentsArchitecture": "Arquitectura de componentes",
     "security": "Seguridad",
     "apiArchitectures": "GraphQL y REST",
+    "websocketAndSSE": "WebSocket y Server-Sent events",
     "regex": "Expresiones regulares"
   },
   "positions": {
