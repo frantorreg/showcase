@@ -1,14 +1,21 @@
+// vendor
 import React, {Component} from 'react';
 import {Translation, withTranslation} from 'react-i18next';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
+// images
 import { ReactComponent as OpenbankLogo } from 'images/organizations/openbank.svg';
 import { ReactComponent as CecotecLogo } from 'images/organizations/cecotec.svg';
 import { ReactComponent as DideLogo } from 'images/organizations/dide.svg';
 import { ReactComponent as AvptpLogo } from 'images/organizations/avptp.svg';
 import { ReactComponent as HabtiumLogo } from 'images/organizations/habtium.svg';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
-import moment from 'moment';
+
+// styles
 import './Main.scss';
+
+// components
+import Episode from "../Episode/Episode";
 
 class Main extends Component {
 
@@ -216,134 +223,47 @@ class Main extends Component {
             </section>
             <section className='experience'>
               <h2>{t('positions.experience')}</h2>
-              <div className='openbank'>
-                <div className='logo'>
-                  <OpenbankLogo/>
-                </div>
-                <div>
-                  <a className='name' target='_blank' href='https://www.openbank.es/'>Openbank</a>
-                  {
-                    (() => {
-                      const startDate = moment({ y: 2021, M: 11, d: 10 });
-                      const endDate = moment();
-                      return (
-                        <div className='period'>
-                          {startDate.format('MMMM YYYY')} — {t('positions.present')}
-                          <span className='duration'>
-                            {moment.duration(endDate.diff(startDate)).humanize()}
-                          </span>
-                        </div>
-                      );
-                    })()
-                  }
-                  <div className='description'>
-                    <span dangerouslySetInnerHTML={{__html: t('positions.frontEnd')}}/>
-                  </div>
-                </div>
-              </div>
-              <div className='cecotec'>
-                <div className='logo'>
-                  <CecotecLogo/>
-                </div>
-                <div>
-                  <a className='name' target='_blank' href='https://www.storececotec.com/'>Cecotec</a>
-                  {
-                    (() => {
-                      const startDate = moment({ y: 2021, M: 2, d: 22 });
-                      const endDate = moment({ y: 2021, M: 11, d: 9 });
-                      return (
-                        <div className='period'>
-                          {startDate.format('MMMM YYYY')} — {endDate.format('MMMM YYYY')}
-                          <span className='duration'>
-                            {moment.duration(endDate.diff(startDate)).humanize()}
-                          </span>
-                        </div>
-                      );
-                    })()
-                  }
-                  <div className='description'>
-                    <span dangerouslySetInnerHTML={{__html: t('positions.frontEnd')}}/>
-                  </div>
-                </div>
-              </div>
-              <div className='dide'>
-                <div className='logo'>
-                  <DideLogo/>
-                </div>
-                <div>
-                  <a className='name' target='_blank' href='https://dide.app'>Dide</a>
-                  {
-                    (() => {
-                      const startDate = moment({ y: 2017, M: 5, d: 1 });
-                      const endDate = moment({ y: 2021, M: 2, d: 21 });
-                      return (
-                        <div className='period'>
-                          {startDate.format('MMMM YYYY')} — {endDate.format('MMMM YYYY')}
-                          <span className='duration'>
-                            {moment.duration(endDate.diff(startDate)).humanize()}
-                          </span>
-                        </div>
-                      );
-                    })()
-                  }
-                  <div className='description'>
-                    <span dangerouslySetInnerHTML={{__html: t('positions.fullStack')}}/>
-                  </div>
-                </div>
-              </div>
+              <Episode
+                title='Openbank'
+                logo={<OpenbankLogo/>}
+                url='https://www.openbank.es/'
+                position={t("positions.frontEnd")}
+                startDate={{ y: 2021, M: 11, d: 10 }}
+              />
+              <Episode
+                title='Cecotec'
+                logo={<CecotecLogo/>}
+                url='https://www.storececotec.com/'
+                position={t("positions.frontEnd")}
+                startDate={{ y: 2021, M: 2, d: 22 }}
+                endDate={{ y: 2021, M: 11, d: 9 }}
+              />
+              <Episode
+                title='Dide'
+                logo={<DideLogo/>}
+                url='https://dide.app'
+                position={t("positions.fullStack")}
+                startDate={{ y: 2017, M: 5, d: 1 }}
+                endDate={{ y: 2021, M: 2, d: 21 }}
+              />
             </section>
             <section className='projects'>
               <h2>{t('positions.projects')}</h2>
-              <div className='avptp'>
-                <div className='logo'>
-                  <AvptpLogo/>
-                </div>
-                <div>
-                  <a className='name' target='_blank' href='https://avptp.org'>Associació Valenciana pel Transport Públic</a>
-                  {
-                    (() => {
-                      const startDate = moment({ y: 2018, M: 3, d: 1 });
-                      const endDate = moment();
-                      return (
-                        <div className='period'>
-                          {startDate.format('MMMM YYYY')} — {t('positions.present')}
-                          <span className='duration'>
-                            {moment.duration(endDate.diff(startDate)).humanize()}
-                          </span>
-                        </div>
-                      );
-                    })()
-                  }
-                  <div className='description'>
-                    {t('positions.secretaryAndCoFounder')} · {t('positions.contentCreator')} · <span dangerouslySetInnerHTML={{__html: t('positions.frontEnd')}}/>
-                  </div>
-                </div>
-              </div>
-              <div className='habtium'>
-                <div className='logo'>
-                  <HabtiumLogo/>
-                </div>
-                <div>
-                  <a className='name' target='_blank' href='https://habtium.es'>Habtium</a>
-                  {
-                    (() => {
-                      const startDate = moment({ y: 2013, M: 9, d: 1 });
-                      const endDate = moment({ y: 2016, M: 5, d: 1 });
-                      return (
-                        <div className='period'>
-                          {startDate.format('MMMM YYYY')} — {endDate.format('MMMM YYYY')}
-                          <span className='duration'>
-                            {moment.duration(endDate.diff(startDate)).humanize()}
-                          </span>
-                        </div>
-                      );
-                    })()
-                  }
-                  <div className='description'>
-                    <span dangerouslySetInnerHTML={{__html: t('positions.fullStack')}}/>
-                  </div>
-                </div>
-              </div>
+              <Episode
+                title='Associació Valenciana pel Transport Públic'
+                logo={<AvptpLogo/>}
+                url='https://avptp.org'
+                position={`${t('positions.secretaryAndCoFounder')} · ${t('positions.contentCreator')} · ${t('positions.frontEnd')}`}
+                startDate={{ y: 2018, M: 3, d: 1 }}
+              />
+              <Episode
+                title='Habtium'
+                logo={<HabtiumLogo/>}
+                url='https://habtium.es'
+                position={t("positions.fullStack")}
+                startDate={{ y: 2013, M: 9, d: 1 }}
+                endDate={{ y: 2016, M: 5, d: 1 }}
+              />
             </section>
             <section className='languages'>
               <h2>{t('languages.title')}</h2>
