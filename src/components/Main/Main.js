@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Translation, withTranslation} from 'react-i18next';
+import { ReactComponent as OpenbankLogo } from 'images/organizations/openbank.svg';
 import { ReactComponent as CecotecLogo } from 'images/organizations/cecotec.svg';
 import { ReactComponent as DideLogo } from 'images/organizations/dide.svg';
 import { ReactComponent as AvptpLogo } from 'images/organizations/avptp.svg';
@@ -215,19 +216,44 @@ class Main extends Component {
             </section>
             <section className='experience'>
               <h2>{t('positions.experience')}</h2>
+              <div className='openbank'>
+                <div className='logo'>
+                  <OpenbankLogo/>
+                </div>
+                <div>
+                  <a className='name' target='_blank' href='https://www.openbank.es/'>Openbank</a>
+                  {
+                    (() => {
+                      const startDate = moment({ y: 2021, M: 11, d: 10 });
+                      const endDate = moment();
+                      return (
+                        <div className='period'>
+                          {startDate.format('MMMM YYYY')} — {t('positions.present')}
+                          <span className='duration'>
+                            {moment.duration(endDate.diff(startDate)).humanize()}
+                          </span>
+                        </div>
+                      );
+                    })()
+                  }
+                  <div className='description'>
+                    <span dangerouslySetInnerHTML={{__html: t('positions.frontEnd')}}/>
+                  </div>
+                </div>
+              </div>
               <div className='cecotec'>
                 <div className='logo'>
                   <CecotecLogo/>
                 </div>
                 <div>
-                  <a className='name' target='_blank' href='https://cecotec.com'>Cecotec</a>
+                  <a className='name' target='_blank' href='https://www.storececotec.com/'>Cecotec</a>
                   {
                     (() => {
                       const startDate = moment({ y: 2021, M: 2, d: 22 });
-                      const endDate = moment();
+                      const endDate = moment({ y: 2021, M: 11, d: 9 });
                       return (
                         <div className='period'>
-                          {startDate.format('MMMM YYYY')} — {t('positions.present')}
+                          {startDate.format('MMMM YYYY')} — {endDate.format('MMMM YYYY')}
                           <span className='duration'>
                             {moment.duration(endDate.diff(startDate)).humanize()}
                           </span>
