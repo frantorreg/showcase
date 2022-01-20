@@ -6,7 +6,7 @@ import {Translation, withTranslation} from 'react-i18next';
 // styles
 import {Wrapper, Logo, Content, Title, Period, PeriodDuration, Positions, Stack} from "./Episode.styled";
 
-function Episode({ logo, title, url, position, startDate, endDate, stack }) {
+function Episode({ logo, title, url, position, startDate, endDate, achievements, stack }) {
   return (
     <Translation>
       {
@@ -32,6 +32,13 @@ function Episode({ logo, title, url, position, startDate, endDate, stack }) {
               <Positions>
                 <span dangerouslySetInnerHTML={{__html: position}}/>
               </Positions>
+              {achievements && (
+                <div>
+                  <ul>
+                    {achievements.map((item) => <li>{item}</li>)}
+                  </ul>
+                </div>
+              )}
               {stack && (
                 <Stack>
                   {stack.map((item) => <div>{item}</div>)}

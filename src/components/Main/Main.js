@@ -130,6 +130,7 @@ class Main extends Component {
                 position={t("positions.frontEnd")}
                 startDate={{ y: 2021, M: 2, d: 22 }}
                 endDate={{ y: 2021, M: 11, d: 9 }}
+                achievements={t("achievements.cecotec")}
                 stack={['react', 'microfrontends', 'kubernetes', 'aws']}
               />
               <Episode
@@ -139,6 +140,7 @@ class Main extends Component {
                 position={t("positions.fullStack")}
                 startDate={{ y: 2017, M: 5, d: 1 }}
                 endDate={{ y: 2021, M: 2, d: 21 }}
+                achievements={t("achievements.dide")}
                 stack={['react', 'ruby on rails', 'mongodb', 'kubernetes', 'azure']}
               />
             </section>

@@ -30,6 +30,20 @@
     "contentCreator": "Creador de contingut",
     "secretaryAndCoFounder": "Secretari i cofundador"
   },
+  "achievements": {
+    "cecotec": [
+      "Optimització del rendiment de taules amb moltes dades implementant la tecnologia de virtualització de taules.",
+      "Implementació de WebSocket per a l'actualització de dades en temps real.",
+      "Extracció de components a una biblioteca interna i la seua documentació."
+    ],
+    "dide": [
+      "Transformació de l'aplicació web en una Progressive Web App.",
+      "Desenvolupament d'un sistema complet d'autenticació i autorització per rols a nivell d'organització.",
+      "Aplicació d'una arquitectura de microserveis en Kubernetes.",
+      "Implementació d'execucions asíncrones i programades.",
+      "Integració de serveis de tercers com Stripe o Sendgrid."
+    ]
+  },
   "languages": {
     "title": "Idiomes",
     "spanish": "Castellà",
