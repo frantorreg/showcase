@@ -1,6 +1,9 @@
 // vendor
 import styled from 'styled-components'
 
+// styles
+import {buildMiddleMargins} from "../../styles/margins-generator.styled";
+
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -25,7 +28,7 @@ export const Logo = styled.div`
 
 export const Content = styled.div`
   > * {
-    margin: 2px 0;
+    ${buildMiddleMargins('5px')}
   }
 `
 
@@ -50,4 +53,17 @@ export const PeriodDuration = styled.span`
 
 export const Positions = styled.div`
   text-transform: lowercase;
+`
+
+export const Stack = styled.div`
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+
+  > * {
+    padding: 5px 15px;
+    background-color: #e6e6e6;
+    border-radius: 7.5px;
+  }
 `

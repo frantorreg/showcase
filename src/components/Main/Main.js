@@ -121,6 +121,7 @@ class Main extends Component {
                 url='https://www.openbank.es/'
                 position={t("positions.frontEnd")}
                 startDate={{ y: 2021, M: 11, d: 10 }}
+                stack={['react', 'redux', 'microfrontends']}
               />
               <Episode
                 title='Cecotec'
@@ -129,6 +130,7 @@ class Main extends Component {
                 position={t("positions.frontEnd")}
                 startDate={{ y: 2021, M: 2, d: 22 }}
                 endDate={{ y: 2021, M: 11, d: 9 }}
+                stack={['react', 'microfrontends', 'kubernetes', 'aws']}
               />
               <Episode
                 title='Dide'
@@ -137,6 +139,7 @@ class Main extends Component {
                 position={t("positions.fullStack")}
                 startDate={{ y: 2017, M: 5, d: 1 }}
                 endDate={{ y: 2021, M: 2, d: 21 }}
+                stack={['react', 'ruby on rails', 'mongodb', 'kubernetes', 'azure']}
               />
             </section>
             <section className='projects'>
@@ -147,6 +150,7 @@ class Main extends Component {
                 url='https://avptp.org'
                 position={`${t('positions.secretaryAndCoFounder')} · ${t('positions.contentCreator')} · ${t('positions.frontEnd')}`}
                 startDate={{ y: 2018, M: 3, d: 1 }}
+                stack={['react', 'nextjs']}
               />
               <Episode
                 title='Habtium'
@@ -155,6 +159,7 @@ class Main extends Component {
                 position={t("positions.fullStack")}
                 startDate={{ y: 2013, M: 9, d: 1 }}
                 endDate={{ y: 2016, M: 5, d: 1 }}
+                stack={['jquery', 'php', 'mariadb']}
               />
             </section>
             <section className='languages'>
