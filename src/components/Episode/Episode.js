@@ -4,7 +4,18 @@ import moment from "moment";
 import {Translation, withTranslation} from 'react-i18next';
 
 // styles
-import {Wrapper, Logo, Content, Title, Period, PeriodDuration, Positions, Stack} from "./Episode.styled";
+import {
+  Wrapper,
+  Logo,
+  Content,
+  Title,
+  Period,
+  PeriodDuration,
+  Positions,
+  Achievements,
+  Achievement,
+  Stack,
+} from "./Episode.styled";
 
 function Episode({ logo, title, url, position, startDate, endDate, achievements, stack }) {
   return (
@@ -34,9 +45,9 @@ function Episode({ logo, title, url, position, startDate, endDate, achievements,
               </Positions>
               {achievements && (
                 <div>
-                  <ul>
-                    {achievements.map((item) => <li>{item}</li>)}
-                  </ul>
+                  <Achievements>
+                    {achievements.map((item) => <Achievement>{item}</Achievement>)}
+                  </Achievements>
                 </div>
               )}
               {stack && (
