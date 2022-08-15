@@ -91,10 +91,25 @@ export const Stack = styled.div`
 `;
 
 export const ContributionsLink = styled.a`
+  margin-left: 12px;
   padding: 2.5px 5px;
   color: #aeaeae;
-  border: 1px solid #bdbdbd;
-  border-radius: 5px;
+  font-weight: 300;
 
-  margin-left: 12px;
+  @media screen {
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+  }
+
+  @media print {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+  }
+`;
+
+export const Printable = styled.span`
+  @media screen {
+    display: none;
+  }
 `;

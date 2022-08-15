@@ -165,6 +165,7 @@ function Main() {
                 />
               }
               url='https://frantorregrosa.me'
+              repoUrl='https://github.com/frantorreg/showcase'
               contributionsUrl='https://github.com/frantorreg/showcase/commits?author=frantorreg'
               position={t('positions.frontEnd')}
               startDate={{ y: 2021, M: 0, d: 1 }}
@@ -176,6 +177,7 @@ function Main() {
               title='Associació Valenciana pel Transport Públic'
               logo={<AvptpLogo/>}
               url='https://avptp.org'
+              repoUrl='https://github.com/avptp/face'
               contributionsUrl='https://github.com/avptp/face/commits?author=frantorreg'
               position={`${t('positions.secretaryAndCoFounder')} · ${t('positions.contentCreator')} · ${t('positions.frontEnd')}`}
               startDate={{ y: 2018, M: 3, d: 1 }}

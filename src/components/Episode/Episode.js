@@ -13,6 +13,7 @@ import {
   Period,
   PeriodDuration,
   Positions,
+  Printable,
   Stack,
   Title,
   Wrapper,
@@ -26,6 +27,7 @@ export default function Episode({
   logo,
   title,
   url,
+  repoUrl,
   contributionsUrl,
   position,
   startDate,
@@ -43,9 +45,18 @@ export default function Episode({
           <Title target="_blank" href={url}>
             {title}
           </Title>
-          {contributionsUrl && (
-            <ContributionsLink target="_blank" href={contributionsUrl}>
+          {(repoUrl || contributionsUrl) && (
+            <ContributionsLink
+              target="_blank"
+              href={contributionsUrl || repoUrl}
+            >
               <FontAwesomeIcon icon={faCodeBranch} />
+              <Printable>
+                {(() => {
+                  const url = new URL(repoUrl || contributionsUrl);
+                  return `${url.host}${url.pathname}`;
+                })()}
+              </Printable>
             </ContributionsLink>
           )}
         </div>
