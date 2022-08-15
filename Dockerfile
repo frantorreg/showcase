@@ -1,5 +1,5 @@
 ## Development image
-FROM node:12.18.0-alpine AS development
+FROM node:16.16.0-alpine AS development
 
 WORKDIR /app
 
@@ -17,7 +17,7 @@ RUN if [ $USER_ID -ne 1000 ]; then \
 
 
 ## Builder image
-FROM node:12.18.0-alpine AS builder
+FROM node:16.16.0-alpine AS builder
 
 WORKDIR /app
 
