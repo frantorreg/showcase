@@ -31,6 +31,7 @@
     "secretaryAndCoFounder": "Secretario y cofundador"
   },
   "achievements": {
+    "brutal": "Adaptación de la página web a las pantallas de los diferentes dispositivos, como los móviles y las tabletas.",
     "cecotec": [
       "Optimización del rendimiento de tablas con muchos datos implementando la tecnología de virtualización de tablas.",
       "Implementación de WebSocket para la actualización de datos en tiempo real.",
@@ -42,7 +43,8 @@
       "Aplicación de una arquitectura de microservicios en Kubernetes.",
       "Implementación de ejecuciones asíncronas y programadas.",
       "Integración de servicios de terceros como Stripe o Sendgrid."
-    ]
+    ],
+    "personalWeb": "Currículum imprimible en PDF desde el mismo navegador."
   },
   "languages": {
     "title": "Idiomas",

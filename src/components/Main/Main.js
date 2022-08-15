@@ -4,11 +4,12 @@ import {Translation, withTranslation} from 'react-i18next';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 // images
-import { ReactComponent as OpenbankLogo } from 'images/organizations/openbank.svg';
+import { ReactComponent as AvptpLogo } from 'images/organizations/avptp.svg';
+import { ReactComponent as BrutalLogo } from 'images/organizations/brutal.svg';
 import { ReactComponent as CecotecLogo } from 'images/organizations/cecotec.svg';
 import { ReactComponent as DideLogo } from 'images/organizations/dide.svg';
-import { ReactComponent as AvptpLogo } from 'images/organizations/avptp.svg';
 import { ReactComponent as HabtiumLogo } from 'images/organizations/habtium.svg';
+import { ReactComponent as OpenbankLogo } from 'images/organizations/openbank.svg';
 import {faGithub, faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 
 // styles
@@ -146,12 +147,39 @@ function Main() {
           <section className='projects'>
             <h2>{t('positions.projects')}</h2>
             <Episode
+              title='Brutal'
+              logo={<BrutalLogo/>}
+              url='https://brutal.systems/'
+              position={t('positions.frontEnd')}
+              startDate={{ y: 2022, M: 3, d: 1 }}
+              endDate={null}
+              achievements={t("achievements.brutal")}
+              stack={['react', 'scss']}
+            />
+            <Episode
+              title='Página web personal'
+              logo={
+                <img
+                  style={{borderRadius: '100%'}}
+                  src='https://secure.gravatar.com/avatar/5338dcd43ada152f033b638ceaada0af.jpg?d=retro&amp;s=400'
+                />
+              }
+              url='https://frantorregrosa.me'
+              contributionsUrl='https://github.com/frantorreg/showcase/commits?author=frantorreg'
+              position={t('positions.frontEnd')}
+              startDate={{ y: 2021, M: 0, d: 1 }}
+              endDate={null}
+              achievements={t('achievements.personalWeb')}
+              stack={['react', 'styled components']}
+            />
+            <Episode
               title='Associació Valenciana pel Transport Públic'
               logo={<AvptpLogo/>}
               url='https://avptp.org'
+              contributionsUrl='https://github.com/avptp/face/commits?author=frantorreg'
               position={`${t('positions.secretaryAndCoFounder')} · ${t('positions.contentCreator')} · ${t('positions.frontEnd')}`}
               startDate={{ y: 2018, M: 3, d: 1 }}
-              stack={['react', 'nextjs']}
+              stack={['react', 'nextjs', 'scss']}
             />
             <Episode
               title='Habtium'
